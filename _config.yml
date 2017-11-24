@@ -4,8 +4,8 @@ email: your-email@example.com
 author: Kwabena Badu
 description: >
  Web and digital designer in Italy. Focused on graphic design, brand identity and mobile-responsive, user-friendly web design.
-baseurl: ''
-url: http://www.iambadu.com
+baseurl: 'http://www.iambadu.com'
+url: 
 image: img/grid-05.png
 markdown: kramdown
 
