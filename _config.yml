@@ -5,13 +5,13 @@ author: Kwabena Badu
 description: >
  Web and digital designer in Italy. Focused on graphic design, brand identity and mobile-responsive, user-friendly web design.
 baseurl: ''
-url: www.iambadu.com
+url: 'www.iambadu.com'
 image: img/grid-05.png
 markdown: kramdown
 
   
 collections:
   portfolio:
-    output: truel
+    output: true
     permalink: work/:title/
 
