@@ -375,11 +375,7 @@ p {
     font-size: 35px;
     font-family: Satisfy, sans-serif
 }
-@media screen and (max-width:480px) {
-    .logo {
-        width: 100px;
-    }
-}
+
 .icon-bar {
     margin-bottom: 5px;
     background: #1F1F1F;
@@ -400,6 +396,7 @@ p {
 .pgwrap {
     padding: 61px 0 50px
 }
+
 .p {
     padding-top: 61px;
 }
@@ -554,11 +551,13 @@ p {
     text-transform: capitalize;
     margin: 25px 15px
 }
+
 @media screen and (max-width:480px) {
     .pgtitl {
         font-size: 30px;
     }
 }
+
 .imgdsc,
 .subtitl,
 .sydinfo h2 {
@@ -642,10 +641,12 @@ p {
     display: block;
     font-size: 35px
 }
+
 .sydinfo .social ul li a:hover {
     opacity: 0.8;
     text-decoration: none;
 }
+
 .sydinfo h2 {
     font-size: 25px;
     margin: 10px
@@ -764,24 +765,27 @@ p {
 .pimgwrap {
     padding: 10px 0;
 }
+
 .animated {
     animation-duration: 2s;
     animation-fill-mode: both
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translate3d(0, 100%, 0)
     }
-
     to {
         opacity: 1;
         transform: none
     }
 }
+
 .fadeInUp {
     animation-name: fadeInUp
 }
+
 .pushy {
     position: fixed;
     width: 200px;
@@ -792,39 +796,49 @@ p {
     overflow: auto;
     -webkit-overflow-scrolling: touch
 }
+
 .pushy a {
     font-size: 16px;
     color: #fd0;
     padding: 15px 0 15px 40px
 }
+
 .pushy a:hover {
     color: #242424;
     background: #fd0
 }
+
 .pushy ul {
     padding: 0;
     margin: 0
 }
+
 .pushy li {
     list-style: none
 }
+
 .pushy ul:first-child {
     margin-top: 10px
 }
+
 .pushy.pushy-left {
     left: 0
 }
+
 .pushy.pushy-right {
     right: 0
 }
+
 .pushy-content {
     visibility: hidden
 }
+
 .pushy-left {
     -webkit-transform: translate3d(-200px, 0, 0);
     -ms-transform: translate3d(-200px, 0, 0);
     transform: translate3d(-200px, 0, 0)
 }
+
 .pushy-open-left #container,
 .pushy-open-left .push,
 .pushy-right {
@@ -832,33 +846,40 @@ p {
     -ms-transform: translate3d(200px, 0, 0);
     transform: translate3d(200px, 0, 0)
 }
+
 .pushy-open-right #container,
 .pushy-open-right .push {
     -webkit-transform: translate3d(-200px, 0, 0);
     -ms-transform: translate3d(-200px, 0, 0);
     transform: translate3d(-200px, 0, 0)
 }
+
 .pushy-open-left .pushy,
 .pushy-open-right .pushy {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
+
 .pushy-open-left .pushy-content,
 .pushy-open-right .pushy-content {
     visibility: visible
 }
+
 #container,
 .push,
 .pushy {
     transition: transform .2s cubic-bezier(.16, .68, .43, .99)
 }
+
 .pushy-content {
     transition: visibility .2s cubic-bezier(.16, .68, .43, .99)
 }
+
 .site-overlay {
     display: none
 }
+
 .pushy-open-left .site-overlay,
 .pushy-open-right .site-overlay {
     display: block;
@@ -872,31 +893,34 @@ p {
     -webkit-animation: fade .5s;
     animation: fade .5s
 }
+
 @keyframes fade {
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
 }
+
 @-webkit-keyframes fade {
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
 }
+
 .pushy-submenu ul {
     padding-left: 15px;
     transition: max-height .2s ease-in-out, visibility .2s ease-in-out
 }
+
 .pushy-submenu ul .pushy-link {
     transition: opacity .2s ease-in-out
 }
+
 .pushy-submenu button {
     width: 100%;
     color: #b3b3b1;
@@ -905,13 +929,16 @@ p {
     background: 0 0;
     border: 0
 }
+
 .pushy-submenu button:hover {
     color: #FFF
 }
+
 .pushy-submenu>a,
 .pushy-submenu>button {
     position: relative
 }
+
 .pushy-submenu>a::after,
 .pushy-submenu>button::after {
     content: '';
@@ -926,21 +953,26 @@ p {
     transform: translateY(-50%);
     transition: transform .2s
 }
+
 .pushy-submenu-closed ul {
     max-height: 0;
     overflow: hidden;
     visibility: hidden
 }
+
 .pushy-submenu-closed .pushy-link {
     opacity: 0
 }
+
 .pushy-submenu-open ul {
     max-height: 1000px;
     visibility: visible
 }
+
 .pushy-submenu-open .pushy-link {
     opacity: 1
 }
+
 .pushy-submenu-open a::after,
 .pushy-submenu-open button::after {
     -webkit-transform: translateY(-50%) rotate(90deg);
