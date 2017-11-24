@@ -17,8 +17,6 @@ intro: I was approached by the ABS Kitchen to design a clean and simple label fo
         <div class="pimgwrap">
 			<img src="/img/port/bsauce/bs_detail2.png" alt="">
 		</div>
-        <div class="pimgwrap">
-			<img src="/img/port/bsauce/bs_detail3.png" alt="">
-		</div>
+
 	</div>
 </div>
