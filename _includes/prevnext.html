@@ -3,9 +3,9 @@
 %} {% unless forloop.first %} {% assign prevurl = prev.url %} {% endunless %} {% unless forloop.last %} {% assign next =
 posts[forloop.index] %} {% assign nexturl = next.url %} {% endunless %} {% endif %} {% assign prev = links %} {% endfor %}
 
-<div class="wrknav">
+<div style="text-align:center;">
     {% if posts.size > 1 %} {% if prevurl %}
-    <a class="prv btn-out" href="{{prevurl}}" class="prev">previous work</a>
+    <a class="prv btn-out" href="{{prevurl}}" style="margin-right:20px;">previous work</a>
     {% endif %} {% if nexturl %}
     <a class="nxt btn-out" href="{{nexturl}}">next work</a>
     {% endif %} {% endif %}
