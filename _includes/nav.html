@@ -2,18 +2,22 @@
     <header class="site-header push">
         <div class="container">
             <div class="logo">
-<<<<<<< HEAD
-                <a href="{{ site.url }}"><img src="{{"img/ib-logo.svg" | relative_url }}"></a>
-=======
-                <a href="{{ site.url }}/"><img src="{{ site.url }}/img/ib-logo.svg"></a>
->>>>>>> parent of 5c0cc13... New changes
+
+                <a href="{{ site.url }}">
+                    <img src="{{" img/ib-logo.svg " | relative_url }}">
+                </a>
+
+                <a href="{{ site.url }}/">
+                    <img src="{{ site.url }}/img/ib-logo.svg">
+                </a>
+
             </div>
             <button class=" menu-btn">
-            <div class="toggle">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
+                <div class="toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
             </button>
             <span></span>
         </div>
@@ -22,9 +26,15 @@
     <nav class="pushy pushy-right" data-focus="#first-link">
         <div class="pushy-content">
             <ul>
-                <li class="pushy-link"><a href="{{ site.url }}"> Home</a></li>
-                <li class="pushy-link"><a href="{{ site.url }}/about"> About</a></li>
-                <li class="pushy-link"><a href="{{ site.url }}/work"> Work</a></li>
+                <li class="pushy-link">
+                    <a href="{{ site.url }}"> Home</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="{{ site.url }}/about"> About</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="{{ site.url }}/work"> Work</a>
+                </li>
             </ul>
         </div>
     </nav>
