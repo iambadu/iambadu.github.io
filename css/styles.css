@@ -490,7 +490,13 @@ p {
     background: #242424;
     color: #fd0
 }
+.wrknav {
+    text-align: center;
+}
 
+.prv {
+    margin-right: 15px;
+}
 .intdesc {
     font-size: 15px;
     font-weight: 700;
@@ -1006,9 +1012,3 @@ p {
     content: "\f230";
 }
 
-.wrknav {
-    text-align: center;
-}
-.prv {
-    margin-right: 15px;
-}
