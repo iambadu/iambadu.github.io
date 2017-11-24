@@ -371,11 +371,15 @@ p {
 .logo {
     float: left;
     width: 150px;
-    height: auto;
+    height: 40px;
     font-size: 35px;
     font-family: Satisfy, sans-serif
 }
-
+@media screen and (max-width:480px) {
+    .logo {
+        width: 100px;
+    }
+}
 .icon-bar {
     margin-bottom: 5px;
     background: #1F1F1F;
