@@ -7,6 +7,7 @@ posts[forloop.index] %} {% assign nexturl = next.url %} {% endunless %} {% endif
     {% if posts.size > 1 %} {% if prevurl %}
     <a class="prv btn-out" href="{{prevurl}}" class="prev">previous work</a>
     {% endif %} {% if nexturl %}
-    <a class="nxt btn-out" href="{{nexturl}}">next work</a><span class="nxt"></span>{% endif %} {% endif %}
+    <a class="nxt btn-out" href="{{nexturl}}">next work</a>
+    {% endif %} {% endif %}
 </div>
 {% endif %}
