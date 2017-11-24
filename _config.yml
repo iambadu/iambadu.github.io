@@ -5,7 +5,8 @@ author: Kwabena Badu
 description: >
  Verona, Italy based web and digital designer focused on graphic design, brand identity and mobile-responsive, user-friendly web design.
 baseurl: ''
-url: 'http://www.iambadu.com'
+url: https://iambadu.com
+enforce_ssl: iambadu.com
 image: img/grid-05.png
 markdown: kramdown
 plugins:
