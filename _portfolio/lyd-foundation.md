@@ -16,11 +16,5 @@ intro: Live Your Dream Foundation is a new foundation that aims to help young on
         <div class="pimgwrap">
 			<img src="/img/port/lyd/lyd_detail2.png" alt="">
 		</div>
-        <div class="pimgwrap">
-			<img src="/img/port/lyd/lyd_detail3.png" alt="">
-		</div>
-        <div class="pimgwrap">
-			<img src="/img/port/lyd/lyd_detail4.png" alt="">
-		</div>
 	</div>
 </div>
