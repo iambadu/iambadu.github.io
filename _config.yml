@@ -8,10 +8,18 @@ baseurl: ''
 url: http://www.iambadu.com
 image: img/grid-05.png
 markdown: kramdown
-
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-admin
   
 collections:
   portfolio:
     output: true
     permalink: work/:title/
+  web:
+    output: true
+    permalink: work/web/:title/
 
+paginate: 6
+paginate_path: "/blog/page:num/"

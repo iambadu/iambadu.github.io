@@ -85,13 +85,13 @@ button::-moz-focus-inner {
 
 @media print {
     *,
-     :after,
-     :before {
-        color: #000!important;
-        text-shadow: none!important;
-        background: 0 0!important;
-        -webkit-box-shadow: none!important;
-        box-shadow: none!important
+    :after,
+    :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important
     }
     a,
     a:visited {
@@ -102,7 +102,7 @@ button::-moz-focus-inner {
     }
     img {
         page-break-inside: avoid;
-        max-width: 100%!important
+        max-width: 100% !important
     }
     h2,
     h3,
@@ -486,10 +486,15 @@ p {
     margin: 15px auto
 }
 
+.blbtn {
+    text-align: center;
+    /* display: block; */
+}
 .btn-out:hover {
     background: #242424;
     color: #fd0
 }
+
 .wrknav {
     text-align: center;
 }
@@ -497,6 +502,7 @@ p {
 .prv {
     margin-right: 15px;
 }
+
 .intdesc {
     font-size: 15px;
     font-weight: 700;
@@ -565,11 +571,11 @@ p {
 }
 
 .pgtitl+p {
-    font-weight: bold;
     margin: 0 auto;
     max-width: 900px;
-    font-size: 18px;
-    padding: 10px
+    font-size: 25px;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 .abtcontent img {
@@ -628,6 +634,364 @@ p {
     overflow: hidden;
     padding: 0;
     margin: 0 auto
+}
+
+.hmblg {
+    padding: 15px;
+}
+
+.blg .blgtitl {
+    display: block;
+    background: #242424;
+    color: #ffdd00;
+}
+
+.blg .blgtitl a {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffdd00;
+    display: block;
+}
+
+.blg .blitem:hover * {
+    color: #242424;
+    background: #ffdd00;
+    text-decoration: none;
+}
+
+.blg .blgmeta span {
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #eaeaea;
+    display: inline;
+}
+
+.blg img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.blitem {
+    padding: 10px;
+}
+
+@media screen and (max-width: 765px) {
+    .blitem {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blitem {
+        width: 100%;
+    }
+}
+
+.pgnwrap .pgntn {
+    padding: 10px;
+    clear: both;
+}
+
+.pgntn a {
+    text-transform: uppercase;
+    display: block;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 5px solid #242424;
+    color: #242424
+}
+
+.pgntn a:hover {
+    text-decoration: none;
+    color: #242424;
+    background: #ffdd00;
+}
+
+.pgntn .next {
+    float: right;
+}
+
+.pgntn .prev {
+    float: left;
+}
+
+.wrk a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.postwrap {
+    float: none;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.postwrap h1 {
+    text-align: center;
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 54px;
+}
+@media screen and (max-width:480px) {
+    .postwrap h1 {
+        font-size: 30px;
+    }
+}
+.postwrap .postimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.post-meta {
+    font-weight: bold;
+    margin: 10px auto;
+    max-width: 380px;
+    text-align: center;
+    color: #242424;
+}
+
+.post-meta i {
+    padding: 3px;
+}
+
+.post-meta span {
+    margin-right: 5px;
+}
+
+.sydbar {
+    padding-top: 30px;
+}
+
+.sydbar ul {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.sydbar ul li {
+    list-style: none;
+}
+
+.sydbar ul li a {
+    color: #242424;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0 8px 10px;
+}
+
+.sydbar ul li a:hover {
+    text-decoration: none;
+    background: #ffdd00;
+}
+
+.sydbar h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    background: #242424;
+    color: #ffdd00;
+    padding: 10px;
+}
+
+.sngpost {
+    padding-top: 15px;
+}
+
+.sngpost h2,
+.sngpost h3 {
+    margin: 0;
+    margin-top: 28px;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sngpost h3 {
+    font-size: 24px;
+}
+
+.sngpost p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 24px;
+}
+@media screen and (max-width:480px) {
+    .sngpost p {
+        font-size: 18px;}
+}
+.tagcloud p {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+.tagcloud a {
+    display: inline-block;
+    text-transform: uppercase;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+    background-color: #fff;
+    border: 1px solid #666;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 8px 8px 0;
+}
+
+.tagcloud a:hover {
+    background-color: #ffdd00;
+    border: 1px solid #242424;
+    color: #242424;
+}
+
+.btnwrap {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: inherit;
+}
+
+.btnwrap .btn-out {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.share-box {
+    padding: 12px 0;
+}
+
+.share-box a {
+    display: inline-block;
+    -webkit-box-shadow: 0 0 1px #777;
+    box-shadow: 0 0 1px #777;
+    padding: 5px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.share-box a:hover {
+    text-decoration: none;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.f {
+    color: #fff;
+    background-color: #3b5998;
+    
+}
+
+.f:hover {
+    color: #fff;
+   opacity: 0.8;
+
+}
+
+.t {
+    color: #fff;
+    background-color: #4099FF;
+}
+
+.t:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.g {
+    color: #fff;
+    background-color: #d34836;
+}
+
+.g:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.r {
+    color: #fff;
+    background-color: #ff5700;
+}
+
+.r:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.l {
+    color: #fff;
+    background-color: #0077b5;
+}
+
+.l:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.e {
+    color: #fff;
+    background-color: #444444;
+}
+
+.e:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.archwrp {
+    margin: 0 auto;
+    float: none;
+}
+
+.archwrp .tagcloud {
+    font-weight: 500;
+    text-align: center;
+}
+
+.archlinks a {
+    color: #242424;
+    border-bottom: 2px dashed #eab405;
+}
+
+.archlinks a:hover {
+    background: #242424;
+    color: #eab405;
+    text-decoration: none;
+    border: transparent;
+}
+
+.archlinks h3 {
+    margin: 0;
+    padding: 20px 0 10px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.archlinks li {
+    padding: 3px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .sydinfo .social ul li {
@@ -753,7 +1117,6 @@ p {
     background-image: -o-linear-gradient(18deg, tomato 50%, transparent 50%, transparent), -o-linear-gradient(right, tomato 50%, #2f3439 50%, #2f3439);
     background-image: linear-gradient(72deg, tomato 50%, transparent 50%, transparent), linear-gradient(270deg, tomato 50%, #2f3439 50%, #2f3439)
 }
-
 
 /* CUSTOM STYLES */
 
@@ -1011,4 +1374,6 @@ p {
 .icon-facebook-official:before {
     content: "\f230";
 }
-
+.tppad {
+    padding-top: 15px;
+}

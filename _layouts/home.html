@@ -18,6 +18,33 @@ layout: default
         </div>
     </div>
 </section>
+<section class="hmblg blg">
+    <div class="container">
+            <h2 class="hmtitl">blog posts</h2>
+        <div class="row">
+            {% for post in site.posts limit:3 %}
+            <div class="col-md-4 col-sm-6 blitem">
+                <a href="{{site.url}}{{post.url}}">
+                    <img src="{{post.thumb}}">
+                    <div class="blgtitl">
+                        {{post.title}}
+                        <div class="blgmeta">
+                            <span>{{post.author}}</span>
+                            <span>
+                                <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                            </span>
+                        </div>
+                </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="blbtn">
+           <a class="btn btn-out" href="{{ "blog/" | relative_url }}">view all posts</a> 
+        </div>
+        
+    </div>
+</section>
 <section class="rcntwrk">
     <div class="container">
         <h2 class="hmtitl">recent work</h2>
@@ -32,7 +59,7 @@ layout: default
             <div class="col-sm-6 hmwitem">
                 <p>Here is a selection of some projects I have worked on recently. These include both concept projects and also clients projects. Have a look around. 
                 </p>
-                <a class="btn btn-out" href="{{ "/work/ " | relative_url }}">view portfolio</a>
+                <a class="btn btn-out" href="{{"work/" | relative_url }}">view portfolio</a>
             </div>
         </div>
     </div>

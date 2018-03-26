@@ -6,15 +6,20 @@ permalink: work/
 <section class="pgwrap wrk">
 	<div class="container">
 		<h1 class="pgtitl">Recent Work</h1>
-		<p>Here is a selection of some projects I have worked on recently. Click on it each project to learn more about it</p>
-		<div class="row">
-			{% for portfolio in site.portfolio limit:8 %}
+		<p>Here is a selection of some projects I have worked on. Click on a category to see more projects from that category</p>
+		<div class="row tppad">
 			<div class="col-sm-6">
-				<a href="{{site.url}}{{portfolio.url}}"><img src="/img/port/{{portfolio.thumb}}"/>
-					<span class="imgdsc">{{portfolio.title}}</span>
+				<a href="{{ "work/web/" | relative_url }}">
+					<img src="/img/wbdesign.png">
+					<span class="imgdsc">Web Design</span>
 				</a>
 			</div>
-			{% endfor %}   
+			<div class="col-sm-6">
+				<a href="{{ "work/design/" | relative_url }}">
+					<img src="/img/grdesign.png">
+					<span class="imgdsc">Graphic Design</span>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>

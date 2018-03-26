@@ -1,0 +1,20 @@
+---
+layout: default
+title: Work
+permalink: work/design/
+---
+<section class="pgwrap wrk">
+	<div class="container">
+		<h1 class="pgtitl">Graphic & Identity Design</h1>
+		<p>Here is a selection of some projects I have worked on recently. Click on it each project to learn more about it</p>
+		<div class="row">
+			{% for portfolio in site.portfolio limit:8 %}
+			<div class="col-sm-6">
+				<a href="{{site.url}}{{portfolio.url}}"><img src="/img/port/{{portfolio.thumb}}"/>
+					<span class="imgdsc">{{portfolio.title}}</span>
+				</a>
+			</div>
+			{% endfor %}   
+		</div>
+	</div>
+</section>
