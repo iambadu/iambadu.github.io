@@ -14,12 +14,9 @@ plugins:
   - jekyll-admin
   
 collections:
-  portfolio:
+  work:
     output: true
     permalink: work/:title/
-  web:
-    output: true
-    permalink: work/web/:title/
 
 paginate: 6
 paginate_path: "/blog/page:num/"

@@ -3,7 +3,7 @@ title: Household Of Favour Chapel - Identity Design
 layout: portfolio
 thumb: hfc/hfc_thumb.png
 bgclass: hfc-bg
-intro: Here I was approached by a Church based in Takoradi, Ghana to redesign their
+intro: Codecliq was approached by a Church based in Takoradi, Ghana, to redesign their
   logo in order to give it a modern look whiles maintaining the essential symbols
   of the logo.
 ---

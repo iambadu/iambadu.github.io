@@ -26,7 +26,6 @@ img {
 .btn,
 .ftr,
 .hmtitl,
-.intro,
 .menu-btn,
 .pgtitl,
 .pgtitl+p {
@@ -395,21 +394,6 @@ p {
     padding-top: 61px;
 }
 
-.introimg {
-    padding: 15px 10px 0;
-    margin: 0 auto;
-    height: auto;
-    max-width: 400px;
-    min-width: 220px
-}
-
-.intro {
-    border-radius: 5px;
-    padding: 20px;
-    background: #fff;
-    float: none;
-    margin: 50px auto
-}
 
 .intro h1 {
     font-weight: 700;
@@ -573,7 +557,7 @@ p {
 .pgtitl+p {
     margin: 0 auto;
     max-width: 900px;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     padding-bottom: 20px;
 }
@@ -1376,4 +1360,113 @@ p {
 }
 .tppad {
     padding-top: 15px;
+}
+.center-block {
+float: none;
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+.nametxt {
+    position: relative;
+    z-index: 1000;
+    background: white;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border:6px solid #242424;
+    display: inline-block;
+}
+.nametxt p {
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.pic-wrap img {
+    width: 100%;
+    max-width: 500px;
+}
+.pic-wrap {
+    margin-top: -100px;
+    z-index: 100;
+    margin-left: 30%;
+    position: relative;
+}
+@media (min-width:620px) and (max-width:740px){
+    .pic-wrap {
+    margin-top: -50px;
+    z-index: 100;
+    margin-left: 15%;
+    position: relative;}   
+}
+@media screen and (max-width:620px){
+    .pic-wrap {
+        margin-top: -20px;
+        z-index: 100;
+        margin-left: 10px;
+        position: relative;   
+    }
+    
+}
+.intro {
+    float: none;
+    z-index: 500;
+    position: relative;
+    margin-top: -150px;
+    display: inline-block;
+}
+@media screen and (max-width:620px){
+    .intro {
+        margin-top: -40px;
+    }
+}
+.intro p {
+    line-height: 30px;
+    display: inline;
+    background: #fd0;
+}
+.btn-out {
+    padding: 8px 25px;
+    background: 0 0;
+    border: 3px solid #242424;
+    display: inline-block;
+    margin: 15px auto;
+}
+ul.nvlnks {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.nvlnks li {
+    margin-right: 8px;
+    list-style-type: none;
+    float: left;
+}
+.nvlnks a {
+    background: #fff;
+    text-transform: uppercase;
+    color: #242424;
+    font-weight: bold;
+}
+
+.blg {
+}
+.blg p {
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+.blg h1 {
+    padding: 5px;
+    border-top: 3px solid #fd0;
+    font-size: 22px;
+    color: #242424;
 }

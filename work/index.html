@@ -1,0 +1,20 @@
+---
+layout: default
+title: Work
+permalink: work/
+---
+<section class="pgwrap wrk">
+	<div class="container">
+		<h1 class="pgtitl">Graphic & UX Design</h1>
+		<p>Here are some projects I have worked on. Some of them are personal projects and others are those I did at work(<a href="https://www.codecliq.com">Codecliq</a>). Click on it each project to learn more about it</p>
+		<div class="row">
+			{% for work in site.work %}
+			<div class="col-sm-6">
+				<a href="{{site.url}}{{work.url}}"><img src="/img/port/{{work.thumb}}"/>
+					<span class="imgdsc">{{work.title}}</span>
+				</a>
+			</div>
+			{% endfor %}   
+		</div>
+	</div>
+</section>
