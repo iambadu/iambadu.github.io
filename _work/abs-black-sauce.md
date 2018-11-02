@@ -1,22 +1,11 @@
 ---
 title: ABS Black Sauce Label
 layout: portfolio
-thumb: bsauce/bs_thumb.png
-bg: bsauce/bs_bg.png
-bgclass: bs-bg
-intro: ABS Kitchen needed a clean and simple label for
-  their Special Black Sauce. Here I used the Amarillo font to make the "Special Black
-  Sauce" have a bold and distinct look.
+thumb: sauce-thumb.png
+url: abs-black-sauce
+category: Product Label Design
+img1: sauce-thumb.png
+img2: 
+desc: We were approached by the ABS Kitchen to design a clean and simple label for their Special Black Sauce. We designed their product label giving it a clear and simple design in order to clearly communicate the product
 ---
 
-<div class="container">
-	<div class="col-md-10 pcenter">
-		<div class="pimgwrap">
-			<img src="/img/port/bsauce/bs_detail.png" alt="">
-		</div>
-        <div class="pimgwrap">
-			<img src="/img/port/bsauce/bs_detail2.png" alt="">
-		</div>
-
-	</div>
-</div>

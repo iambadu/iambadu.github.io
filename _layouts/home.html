@@ -1,44 +1,152 @@
 ---
-layout: neuhome
+layout: default
 ---
-<div class="row pgwrap">
-    <div class="container">
-        <div class="col-md-8 center-block">
-            <div class="nametxt">
-                <p>badu</br>sarpong</br>emmanuel</br>
-                </p>
-                <span>thinker / designer / developer</span>
-            </div>
-            <div class="pic-wrap">
-                <img src="img/badu-bg.png" alt="">
-            </div>
-            <div class="col-sm-7 intro">
-                <p class="lead">I help create awesome brands both offline and on the web through timeless design and user experience
-                    principles. If I was a super hero, i guess my super power will be design and code...lol .</p>
-                <ul class="nvlnks">
-                    <li>
-                        <a class="btn btn-out" href="/work/">work</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-out" href="/about/">about me</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="blg">
-                <div class="col-md-12">
-                    <p>blog</p>
+<div id="hero-and-body">
+
+    <!-- HERO  -->
+    <section id="hero" class="hero-full text-light" style="height: 474px;">
+
+        <div id="page-title" class="wrapper-small">
+            <h1 class="h2">
+                <strong>From Ghana, we help brands and businesses gain a competitive edge in the digital age.</strong>
+            </h1>
+            <div class="spacer-medium"></div>
+            <h5>Located in Takoradi, Ghana</h5>
+        </div>
+        <a href="#" id="scrolldown">
+            <svg class="arrow arrow-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35.35">
+                <title>back-arrow</title>
+                <path d="M0,16.88a3,3,0,0,0,.16.94,1.51,1.51,0,0,0,.63.78l15,15a2.14,2.14,0,0,0,3.52.08,2.14,2.14,0,0,0-.08-3.52L8.59,19.38H57.5a2.5,2.5,0,1,0,0-5H8.59L19.22,3.59A2.14,2.14,0,0,0,19.3.08a2.14,2.14,0,0,0-3.52.08l-15,15a1.51,1.51,0,0,0-.62.78A3,3,0,0,0,0,16.88Z"></path>
+            </svg>
+        </a>
+
+    </section>
+    <!-- HERO -->
+
+    <!-- PAGEBODY -->
+    <section id="page-body">
+
+        <div class="spacer-big"></div>
+        <div class="wrapper-small">
+            <h3>We are an advertising agency obsessed with creating effective and results driven brands. </h3>
+        </div>
+
+        <div class="spacer-big"></div>
+        <div class="wrapper">
+            <div class="scwrap">
+                <h4 class="social-hd">We are social</h4>
+                <div class="pgsc social">
+                    <ul class="socialmedia-widget">
+                        <li class="facebook">
+                            <a href="http://www.facebook.com/codecliq"></a>
+                        </li>
+                        <li class="twitter">
+                            <a href="http://www.twitter.com/codecliq"></a>
+                        </li>
+                        <li class="instagram">
+                            <a href="http://www.instagram.com/codecliq"></a>
+                        </li>
+                    </ul>
                 </div>
-                {% for post in site.posts limit:4 %}
-                <div class="col-sm-6">
-                    <a href="{{site.url}}{{post.url}}">
-                        <h1>{{post.title}}</h1>
-                    </a>
-                    <span>
-                        <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time>
-                    </span>
-                </div>
-                {% endfor %}
             </div>
         </div>
-    </div>
+        <div class="spacer-big"></div>
+        <div class="wrapper">
+            <div id="portfolio-grid" class="isotope-grid portfolio-container style-column-2 fitrows isotope-spaced-big clearfix">
+
+                <div class="isotope-item portfolio-item advertising ">
+                    <div class="portfolio-item-inner item-inner do-anim-modern animated">
+                        <a href="https://www.codecliq.com/work/abs-black-sauce/" class="thumb-hover overlay-color scale text-light">
+                            <img src="img/wrk/sauce-thumb.png" alt="">
+                            <div class="overlay-caption hidden">
+                                <span class="caption-sub portfolio-category">Product Label Design</span>
+                                <h3 class="caption-name portfolio-name">
+                                    <strong>ABS Kitchen Sauce Label</strong>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="isotope-item portfolio-item advertising ">
+                    <div class="portfolio-item-inner item-inner do-anim-modern animated">
+                        <a href="https://www.codecliq.com/work/answer-business-services/" class="thumb-hover overlay-color scale text-light">
+                            <img src="img/wrk/absthumb.png" alt="">
+                            <div class="overlay-caption hidden">
+                                <span class="caption-sub portfolio-category">Identity Design</span>
+                                <h3 class="caption-name portfolio-name">
+                                    <strong>Answer Business Services</strong>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="isotope-item portfolio-item advertising ">
+                    <div class="portfolio-item-inner item-inner do-anim-modern">
+                        <a href="https://www.codecliq.com/work/comlife/" class="thumb-hover overlay-color scale text-light">
+                            <img src="img/wrk/comlife-thumb.png" alt="">
+                            <div class="overlay-caption hidden">
+                                <span class="caption-sub portfolio-category">Identity Design</span>
+                                <h3 class="caption-name portfolio-name">
+                                    <strong>Comlife Gh Ltd.</strong>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="isotope-item portfolio-item advertising ">
+                    <div class="portfolio-item-inner item-inner do-anim-modern">
+                        <a href="https://www.codecliq.com/work/hf-chapel/" class="thumb-hover overlay-color scale text-light">
+                            <img src="img/wrk/hfc-thumb.png" alt="">
+                            <div class="overlay-caption hidden">
+                                <span class="caption-sub portfolio-category">Identity Design</span>
+                                <h3 class="caption-name portfolio-name">
+                                    <strong>House of Favour Chapel</strong>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="spacer-medium"></div>
+            <p class="align-center">
+                <a href="/work/" class="sr-button style-1 button-small">View all Work</a>
+            </p>
+            <div class="spacer-big"></div>
+            <div class="column-section clearfix">
+                <div class="column one-third">
+                    <h5 class="title-alt">
+                        <strong>Services</strong>
+                    </h5>
+                </div>
+                <div class="column one-third">
+                    <ul class="nolist biglist">
+                        <li>Identity Design</li>
+                        <li>Style Guide</li>
+                        <li>Marketing Collateral</li>
+                    </ul>
+                </div>
+                <div class="column one-third last-col">
+                    <ul class="nolist biglist">
+                        <li>Advertising Design</li>
+                        <li>Web Design</li>
+                        <li>Social Media Design</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- END .wrapper -->
+
+        <div class="spacer-big"></div>
+
+
+    </section>
+    <!-- PAGEBODY -->
+
 </div>

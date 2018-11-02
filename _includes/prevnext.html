@@ -3,11 +3,25 @@
 %} {% unless forloop.first %} {% assign prevurl = prev.url %} {% endunless %} {% unless forloop.last %} {% assign next =
 posts[forloop.index] %} {% assign nexturl = next.url %} {% endunless %} {% endif %} {% assign prev = links %} {% endfor %}
 
-<div style="text-align:center;">
-    {% if posts.size > 1 %} {% if prevurl %}
-    <a class="prv btn-out" href="{{prevurl}}" style="margin-right:20px;">previous work</a>
-    {% endif %} {% if nexturl %}
-    <a class="nxt btn-out" href="{{nexturl}}">next work</a>
-    {% endif %} {% endif %}
-</div>
+<div class="wrapper">
+    <div id="single-pagination" class="portfolio-pagination">
+        <ul class="pagination">
+            {% if posts.size > 1 %} {% if prevurl %}
+            <li class="prev"><a href="{{prevurl}}"><span class="text">Previous</span>
+                    <svg class="arrow arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35.35">
+                        <title>back-arrow</title>
+                        <path d="M0,16.88a3,3,0,0,0,.16.94,1.51,1.51,0,0,0,.63.78l15,15a2.14,2.14,0,0,0,3.52.08,2.14,2.14,0,0,0-.08-3.52L8.59,19.38H57.5a2.5,2.5,0,1,0,0-5H8.59L19.22,3.59A2.14,2.14,0,0,0,19.3.08a2.14,2.14,0,0,0-3.52.08l-15,15a1.51,1.51,0,0,0-.62.78A3,3,0,0,0,0,16.88Z"></path>
+                    </svg>
+            </a></li>
+            {% endif %} {% if nexturl %}
+            <li class="next "><a href="{{nexturl}}"><span class="text">Next</span>
+                    <svg class="arrow arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35.35">
+                        <title>back-arrow</title>
+                        <path d="M0,16.88a3,3,0,0,0,.16.94,1.51,1.51,0,0,0,.63.78l15,15a2.14,2.14,0,0,0,3.52.08,2.14,2.14,0,0,0-.08-3.52L8.59,19.38H57.5a2.5,2.5,0,1,0,0-5H8.59L19.22,3.59A2.14,2.14,0,0,0,19.3.08a2.14,2.14,0,0,0-3.52.08l-15,15a1.51,1.51,0,0,0-.62.78A3,3,0,0,0,0,16.88Z"></path>
+                    </svg>
+            </a></li>
+            {% endif %} {% endif %}
+        </ul>
+    </div>
+</div> <!-- END .wrapper -->
 {% endif %}

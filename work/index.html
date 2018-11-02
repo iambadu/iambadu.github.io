@@ -3,18 +3,46 @@ layout: default
 title: Work
 permalink: work/
 ---
-<section class="pgwrap wrk">
-	<div class="container">
-		<h1 class="pgtitl">Graphic & UX Design</h1>
-		<p>Here are some projects I have worked on. Some of them are personal projects and others are those I did at work(<a href="https://www.codecliq.com">Codecliq</a>). Click on it each project to learn more about it</p>
-		<div class="row">
-			{% for work in site.work %}
-			<div class="col-sm-6">
-				<a href="{{site.url}}{{work.url}}"><img src="/img/port/{{work.thumb}}"/>
-					<span class="imgdsc">{{work.title}}</span>
-				</a>
-			</div>
-			{% endfor %}   
-		</div>
-	</div>
-</section>
+<!-- HERO & BODY -->
+<div id="hero-and-body">
+    <!-- HERO  -->
+    <section id="hero" class="hero-big" style="background:#000000;">
+        <div id="page-title" class="wrapper">
+            <h1 class="h2" style="color:#ffffff">Recent work</h1>
+        </div>
+    </section>
+    <div class="spacer-medium"></div>
+    <!-- HERO -->
+
+    <!-- PAGEBODY -->
+    <section id="page-body">
+
+        <div class="wrapper">
+            <div id="portfolio-grid" class="isotope-grid portfolio-container style-column-2 isotope-spaced fitrows clearfix">
+                {% for work in site.work %}
+                <div class="isotope-item portfolio-item advertising">
+                    <div class="portfolio-item-inner item-inner do-anim-modern">
+                        <a href="{{site.url}}{{work.url}}" class="thumb-hover overlay-color scale text-light">
+                            <img src="/img/wrk/{{work.thumb}}" alt="">
+                            <div class="overlay-caption hidden">
+                                <span class="caption-sub portfolio-category">{{work.category}}</span>
+                                <h4 class="caption-name portfolio-name">
+                                    <strong>{{work.title}}</strong>
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- END grid -->
+
+        </div>
+        <!-- END .wrapper -->
+
+        <div class="spacer-big"></div>
+
+    </section>
+    <!-- PAGEBODY -->
+</div>
+<!-- HERO & BODY -->

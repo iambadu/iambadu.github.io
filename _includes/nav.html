@@ -1,38 +1,74 @@
-<body>
-    <header class="site-header push">
-        <div class="container">
-            <div class="logo">
-                <a href="{{ site.url }}">
-                    <img src="{{"img/ib-logo.svg" | relative_url }}">
+<header id="header" class="header-left text-light onhero hero-invisible">
+    <div class="header-inner clearfix">
+
+        <!-- LOGO -->
+        <div id="logo" class="logo-left text-light">
+            <a href="https://www.codecliq.com/">
+                <img id="dark-logo" src="{{"/img/code_logo_blue.svg" | relative_url }}" alt="Codecliq">
+                <img id="light-logo" src="{{"/img/code_logo_white.svg" | relative_url }}" alt="Codecliq">
+            </a>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+        <div id="menu" class="clearfix">
+
+            <div class="menu-actions">
+                <div class="menu-toggle">
+                    <span class="hamburger"></span>
+                </div>
+            </div>
+            <!-- END .menu-actions -->
+
+            <div id="menu-inner">
+                <nav id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="{{site.url}}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{site.url}}/work">Work</a>
+                        </li>
+                        <li>
+                            <a href="{{site.url}}/about">About</a>
+                        </li>
+                        <li>
+                            <a href="{{site.url}}/services">Services</a>
+                        </li>
+                        <li>
+                            <a href="{{site.url}}/contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END #menu-inner -->
+        </div>
+        <!-- END #menu -->
+
+        <div id="header-actions">
+            <div class="header-totop visible">
+                <a class="totop" href="#">
+                    <svg class="arrow arrow-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35.35">
+                        <path d="M0,16.88a3,3,0,0,0,.16.94,1.51,1.51,0,0,0,.63.78l15,15a2.14,2.14,0,0,0,3.52.08,2.14,2.14,0,0,0-.08-3.52L8.59,19.38H57.5a2.5,2.5,0,1,0,0-5H8.59L19.22,3.59A2.14,2.14,0,0,0,19.3.08a2.14,2.14,0,0,0-3.52.08l-15,15a1.51,1.51,0,0,0-.62.78A3,3,0,0,0,0,16.88Z"></path>
+                    </svg>
                 </a>
             </div>
-            <button class=" menu-btn">
-                <div class="toggle">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </div>
-            </button>
-            <span></span>
         </div>
-    </header>
-    <!-- Pushy Menu -->
-    <nav class="pushy pushy-right" data-focus="#first-link">
-        <div class="pushy-content">
-            <ul>
-                <li class="pushy-link">
-                    <a href="{{site.url}}"> Home</a>
+
+        <div id="header-widget" class="social">
+            <ul class="socialmedia-widget">
+                <li class="facebook">
+                    <a href="http://www.facebook.com/codecliq"></a>
                 </li>
-                <li class="pushy-link">
-                    <a href="{{ site.url }}/about"> About</a>
+                <li class="twitter">
+                    <a href="http://www.twitter.com/codecliq"></a>
                 </li>
-                <li class="pushy-link">
-                    <a href="{{ site.url }}/blog"> Blog</a>
-                </li>
-                <li class="pushy-link">
-                    <a href="{{ site.url }}/work"> Work</a>
+                <li class="instagram">
+                    <a href="http://www.instagram.com/codecliq"></a>
                 </li>
             </ul>
         </div>
-    </nav>
-    <div class="site-overlay"></div>
+
+    </div>
+    <!-- END .header-inner -->
+    <span class="pseudo-close header-close"></span>
+</header>

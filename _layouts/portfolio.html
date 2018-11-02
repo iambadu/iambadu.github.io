@@ -1,14 +1,44 @@
---- 
+---
 layout: default
 ---
-<div class="p {{page.bgclass}}"></div>
-<section class="wrk">
-	<div class="container">
-		<h1 class="pgtitl">{{page.title}}</h1>
-		<p class="wrkintro">{{page.intro}}</p>
-		{{content}}
-		 {% include prevnext.html %}
-	</div>
-	
-</section>
 
+<div id="hero-and-body">
+
+	<!-- PAGEBODY -->
+	<section id="page-body">
+
+		<div class="spacer-big"></div>
+		<div class="spacer-medium"></div>
+
+		<div class="wrapper-big">
+
+			<div class="column-section spaced-big clearfix">
+				<h1 class="h2 dscpghdr">{{page.title}}</h1>
+				<div class="column one-third">
+					<h5 class="title-alt">{{page.category}}</h5>
+				</div>
+				<div class="column two-third last-col">
+					<p class="h4">{{page.desc}}</p>
+					<div class="spacer-small"></div>
+					<div class="spacer-medium"></div>
+				</div>
+			</div>
+			<div id="gallery-grid" class="isotope-grid gallery-container isotope-spaced-big style-column-2 fitrows clearfix">
+				<div style="margin: 0 auto;max-width: 900px;">
+					<div class="isotope-item gallery-item double-width">
+						<div class="gallery-item-inner item-inner">
+							<img src="/img/wrk/{{page.thumb}}" alt="SEO" />
+						</div>
+					</div>
+					{{content}}
+
+				</div>
+			</div>
+			{% include prevnext.html %}
+
+			<div class="spacer-small"></div>
+			<!-- END #gallery-grid -->
+
+		</div>
+	</section>
+</div>

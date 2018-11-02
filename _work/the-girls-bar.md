@@ -1,20 +1,10 @@
 ---
-title: The Girls Bar - Identity Design
+title: The Girls Bar
 layout: portfolio
-thumb: girls_bar/gb_thumb.png
-bgclass: gb-bg
-intro: A young and emerging mobile cocktail startup in Ghana wanted a distinct and
-  effective brand design for their new company. Here the aim was to provide a logo
-  that effectively communicated their brand goals.
+thumb: girlsbar.png
+url: girlsbar
+category: Identity Design
+img1: girlsbar.png
+desc: Here we created a distinct and effective brand identity that refelected the branding goals of the young emerging startup based in Ghana.
 ---
 
-<div class="container">
-	<div class="col-md-10 pcenter">
-		<div class="pimgwrap">
-			<img src="/img/port/girls_bar/gb_detail.png" alt="">
-		</div>
-        <div class="pimgwrap">
-			<img src="/img/port/girls_bar/gb_detail2.png" alt="">
-		</div>
-	</div>
-</div>
