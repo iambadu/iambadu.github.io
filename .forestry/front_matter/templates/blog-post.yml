@@ -1,0 +1,22 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: file
+  name: ftrd
+  label: ftrd
+- type: file
+  name: thumb
+  label: thumb
+- type: text
+  name: author
+  label: author
+- type: text
+  name: tags
+  label: tags
